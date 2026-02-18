@@ -1,4 +1,4 @@
-# Khalil Arapaj - Portfolio Website
+# Klenis Arapaj - Portfolio Website
 
 Professional portfolio website for a final-year BSc Computer Science student specializing in AI and Computer Vision at University of East London.
 
