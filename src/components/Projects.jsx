@@ -52,7 +52,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen py-20 px-4 bg-dark-card">
+    <section id="projects" className="min-h-screen py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ const Projects = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title text-center mb-4">Projects</h2>
-          <p className="text-center text-gray-400 mb-16 text-lg">
+          <p className="text-center text-gray-600 mb-16 text-lg">
             Showcase of my work in AI, Computer Vision, and Web Development
           </p>
 
@@ -78,25 +78,25 @@ const Projects = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-2xl md:text-3xl font-bold text-white">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
                         {project.title}
                       </h3>
                       <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                         project.status === 'In Development' 
                           ? 'bg-yellow-500/20 text-yellow-400' 
-                          : 'bg-gray-500/20 text-gray-400'
+                          : 'bg-gray-500/20 text-gray-600'
                       }`}>
                         {project.status}
                       </span>
                     </div>
                     
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed">
                       {project.description}
                     </p>
 
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Key Features:</h4>
-                      <ul className="list-disc list-inside text-gray-300 space-y-1">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Key Features:</h4>
+                      <ul className="list-disc list-inside text-gray-700 space-y-1">
                         {project.features.map((feature, i) => (
                           <li key={i}>{feature}</li>
                         ))}
@@ -104,7 +104,7 @@ const Projects = () => {
                     </div>
 
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Tech Stack:</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Tech Stack:</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.techStack.map((tech) => (
                           <span
@@ -159,7 +159,7 @@ const Projects = () => {
                       <div className="w-full aspect-video bg-gray-800 rounded-lg flex items-center justify-center">
                         <div className="text-center">
                           <div className="text-6xl mb-4">🚧</div>
-                          <p className="text-gray-400">Coming Soon</p>
+                          <p className="text-gray-600">Coming Soon</p>
                         </div>
                       </div>
                     )}

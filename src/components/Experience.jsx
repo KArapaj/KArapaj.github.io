@@ -48,7 +48,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-4 bg-dark-bg">
+    <section id="experience" className="min-h-screen py-20 px-4 bg-gradient-to-b from-cyan-50 to-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title text-center mb-4">Experience</h2>
-          <p className="text-center text-gray-400 mb-16 text-lg">
+          <p className="text-center text-gray-600 mb-16 text-lg">
             My journey in software development and research
           </p>
 
@@ -85,7 +85,7 @@ const Experience = () => {
                           {exp.icon}
                         </div>
                         <div>
-                          <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
+                          <h3 className="text-2xl font-bold text-gray-900">{exp.title}</h3>
                           <p className="text-primary font-semibold">{exp.organization}</p>
                         </div>
                       </div>
@@ -94,15 +94,15 @@ const Experience = () => {
                       </span>
                     </div>
                     
-                    <p className="text-gray-400 mb-4">{exp.period}</p>
+                    <p className="text-gray-600 mb-4">{exp.period}</p>
                     
-                    <p className="text-gray-300 mb-4 leading-relaxed">
+                    <p className="text-gray-700 mb-4 leading-relaxed">
                       {exp.description}
                     </p>
 
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Key Contributions:</h4>
-                      <ul className="list-disc list-inside text-gray-300 space-y-2">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Key Contributions:</h4>
+                      <ul className="list-disc list-inside text-gray-700 space-y-2">
                         {exp.achievements.map((achievement, i) => (
                           <li key={i}>{achievement}</li>
                         ))}

@@ -7,12 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3B82F6',
-        secondary: '#8B5CF6',
+        primary: '#06B6D4', // Cyan/Light Blue
+        secondary: '#10B981', // Emerald/Green
         dark: {
-          bg: '#0F172A',
-          card: '#1E293B',
-          text: '#E2E8F0',
+          bg: '#F0FDFA', // Very light cyan/teal background
+          card: '#FFFFFF', // White cards
+          text: '#0F172A', // Dark text for contrast
+        },
+        light: {
+          bg: '#F0FDFA', // Very light cyan/teal
+          card: '#FFFFFF', // White
+          border: '#CCFBF1', // Light cyan border
+          text: '#0F172A', // Dark slate text
+          textSecondary: '#334155', // Slate gray for secondary text
         }
       },
       animation: {

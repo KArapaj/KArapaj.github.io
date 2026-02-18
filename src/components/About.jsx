@@ -17,7 +17,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen py-20 px-4 bg-dark-bg">
+    <section id="about" className="min-h-screen py-20 px-4 bg-gradient-to-b from-white to-cyan-50">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,20 +35,20 @@ const About = () => {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 I'm a passionate final-year Computer Science student at the University of East London, 
                 specializing in Artificial Intelligence and Computer Vision. My academic journey has been 
                 driven by curiosity and a desire to leverage technology to solve real-world problems.
               </p>
               
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Currently, I'm working on my dissertation project: an <span className="text-primary font-semibold">
                 AI-based volleyball performance tracker</span>. This innovative system uses computer vision 
                 for player pose estimation and generates comprehensive metrics including attack efficiency 
                 and dynamic heatmaps to analyze player performance.
               </p>
               
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Beyond academics, I'm an avid volleyball player, which inspired my dissertation topic. 
                 I also enjoy playing chess in my free time, appreciating the strategic thinking it develops 
                 - skills that translate well into software development and problem-solving.
@@ -63,17 +63,17 @@ const About = () => {
               className="space-y-6"
             >
               <div className="card">
-                <h3 className="text-2xl font-bold text-white mb-4">Education</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Education</h3>
                 <div className="space-y-2">
                   <p className="text-primary font-semibold">BSc Computer Science</p>
-                  <p className="text-gray-300">University of East London</p>
-                  <p className="text-gray-400">Final Year | Expected Graduation 2026</p>
+                  <p className="text-gray-700">University of East London</p>
+                  <p className="text-gray-600">Final Year | Expected Graduation 2026</p>
                 </div>
               </div>
 
               <div className="card">
-                <h3 className="text-2xl font-bold text-white mb-4">Research Focus</h3>
-                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Research Focus</h3>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
                   <li>Computer Vision & Pose Estimation</li>
                   <li>Machine Learning Applications</li>
                   <li>Performance Analytics</li>
@@ -89,7 +89,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-white text-center mb-8">Technical Skills</h3>
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-8">Technical Skills</h3>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               {skills.map((skill, index) => (
                 <motion.div
@@ -103,7 +103,7 @@ const About = () => {
                   <div className="text-4xl text-primary mb-3 flex justify-center">
                     {skill.icon}
                   </div>
-                  <p className="text-gray-300 font-medium">{skill.name}</p>
+                  <p className="text-gray-700 font-medium">{skill.name}</p>
                 </motion.div>
               ))}
             </div>

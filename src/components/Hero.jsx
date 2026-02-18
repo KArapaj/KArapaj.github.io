@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-bg to-dark-card px-4 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-cyan-50 to-white px-4 pt-20">
       <div className="max-w-6xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,23 +11,23 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
-            <div className="w-full h-full rounded-full bg-dark-card flex items-center justify-center">
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-xl">
+            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
               <span className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                 KA
               </span>
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
-            Khalil Arapaj
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 animate-fade-in">
+            Klenis Arapaj
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-slide-up">
             Final-year BSc Computer Science Student | AI & Computer Vision Enthusiast
           </p>
           
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
             University of East London, England
           </p>
         </motion.div>
